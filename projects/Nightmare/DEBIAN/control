@@ -1,0 +1,9 @@
+Package: com.andermoran.nightmare
+Name: Nightmare
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Beautiful nightmode for Snapchat
+Maintainer: Ander Moran
+Author: Ander Moran
+Section: Tweaks

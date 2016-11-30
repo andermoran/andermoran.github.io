@@ -1,0 +1,8 @@
+Origin: Ander Moran’s Repo
+Label: Ander Moran’s Repo
+Suite: stable
+Version: 0.9
+Codename: tangelo
+Architectures: iphoneos-arm
+Components: main
+Description: A public repository for my tweaks :)
