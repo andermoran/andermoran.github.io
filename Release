@@ -2,7 +2,7 @@ Origin: Ander Moran’s Repo
 Label: Ander Moran’s Repo
 Suite: stable
 Version: 0.9
-Codename: tangelo
+Codename: com.andermoran.repo
 Architectures: iphoneos-arm
 Components: main
 Description: A public repository for my tweaks :)

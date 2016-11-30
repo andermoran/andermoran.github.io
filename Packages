@@ -4,10 +4,10 @@ Architecture: iphoneos-arm
 Maintainer: Ander Moran
 Depends: mobilesubstrate
 Filename: ./debs//com.andermoran.nightmare_0.0.1_iphoneos-arm.deb
-Size: 1120
-MD5sum: 0a4845af78bc741d09e9eea4e0483899
-SHA1: d89bc7d1c666852a38145e8e194dc47989f2c91a
-SHA256: e5de332b07292e55bb08fb15092bb1ed25e61e63dbd08f7478a831148b0b08d4
+Size: 1272
+MD5sum: 35e408c39e466a0159ef657a1fb01259
+SHA1: ce7bbc1a1f47cd876549cfa4f39c31d56d65a6ef
+SHA256: f8a25487542a334f3d40c4dc60d0f0306c4957231df2b4b2066685f75ef6285f
 Section: Tweaks
 Description: Beautiful nightmode for Snapchat
 Author: Ander Moran
