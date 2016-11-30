@@ -3,7 +3,7 @@ Version: 0.0.1
 Architecture: iphoneos-arm
 Maintainer: Ander Moran
 Depends: mobilesubstrate
-Filename: ./debs//com.andermoran.nightmare_0.0.1_iphoneos-arm.deb
+Filename: ./debs//com.andermoran.nightmare.deb
 Size: 1454
 MD5sum: b75bc84654970446527e30f8985bc3c3
 SHA1: 27de32038830384420cd7dda9f90a18ceb60b091
