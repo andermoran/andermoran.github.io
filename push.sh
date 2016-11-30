@@ -1,4 +1,4 @@
 #!/bin/bash
 dpkg-scanpackages ./debs > Packages
-bzip2 -fks Packages
+dpkg-scanpackages ./debs | gzip > Packages.gz;
 bzip2 -fks Packages
