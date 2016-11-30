@@ -5,9 +5,9 @@ Maintainer: Ander Moran
 Depends: mobilesubstrate
 Filename: ./debs//com.andermoran.nightmare_0.0.1_iphoneos-arm.deb
 Size: 1272
-MD5sum: 0d979222a333cbaa9e16b721814efa3e
-SHA1: 0b96f6a4275ba646580f5f4db17fbcdf82d0a0b0
-SHA256: 052afd8c5206884fb9bd2b537df305ae0c2f2fb2283a924f0911a4ca7514f770
+MD5sum: 746bb1d6096145f287da1798bfa537d7
+SHA1: 2fd6253f0ed049db28bb2b7389257d74cc0cefe8
+SHA256: 1d3349f60aa4e588c5e68ac9a4ceca149444563f9f42537b49d0daaffa75ab31
 Section: Tweaks
 Description: Beautiful nightmode for Snapchat
 Author: Ander Moran
