@@ -1,7 +1,7 @@
 <package>
-	<id>com.supermamon.oldpackage</id>
-	<name>Old Package</name>
-	<version>1.0.0-1</version>
+	<id>com.andermoran.nightmare</id>
+	<name>Nightmare</name>
+	<version>0.0.1</version>
 	<compatibility>
 		<firmware>
 			<maxiOS>9.3.3</maxiOS>
