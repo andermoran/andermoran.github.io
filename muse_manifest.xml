@@ -1,10 +1,11 @@
-<manifest alg="2" build="2017.0.1.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="andermoran.github.io" resolutions="1x" timestamp="1487297029265">
+<manifest alg="2" build="2017.0.1.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="andermoran.github.io" resolutions="1x" timestamp="1487564901770">
   <folder name="css">
     <file name="site_global.css" crc="443350757"/>
-    <file name="index.css" crc="259557341" ref="index"/>
+    <file name="index.css" crc="3980909371" ref="index"/>
   </folder>
   <folder name="assets">
     <file name="large-terminal-icon.png" crc="268867553" seo="true" mt="1482707036000"/>
+    <file name="ander-resume-2-19-2017.pdf" crc="30229949" seo="true" mt="1487562061000"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
@@ -19,5 +20,5 @@
     <file name="xcode icon large.png" crc="4218729477" seo="true" ref="index"/>
     <file name="large terminal icon.png" crc="4253297024" seo="true" ref="index"/>
   </folder>
-  <file name="index.html" crc="66718007" seo="true" mt="1482709049891" redirect="true"/>
+  <file name="index.html" crc="246669758" seo="true" mt="1487564830767" redirect="true"/>
 </manifest>
