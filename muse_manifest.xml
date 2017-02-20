@@ -1,11 +1,11 @@
-<manifest alg="2" build="2017.0.1.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="andermoran.github.io" resolutions="1x" timestamp="1487565387280">
+<manifest alg="2" build="2017.0.1.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="andermoran.github.io" resolutions="1x" timestamp="1487565560331">
   <folder name="css">
     <file name="site_global.css" crc="443350757"/>
     <file name="index.css" crc="3980909371" ref="index"/>
   </folder>
   <folder name="assets">
     <file name="large-terminal-icon.png" crc="268867553" seo="true" mt="1482707036000"/>
-    <file name="ander-resume-2-19-2017.pdf" crc="157417690" seo="true" mt="1487565355000"/>
+    <file name="ander-resume-2-19-2017.pdf" crc="143045289" seo="true" mt="1487565545000"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
