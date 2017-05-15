@@ -1,0 +1,92 @@
+.snapchatFontThin {
+	font-family: 'HelveticaNeue-Thin', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+
+a {
+	cursor: pointer;
+}
+
+#navigationMenu {
+	text-align: center;
+	padding: 1rem;
+}
+
+#navigationMenu .button {
+	width: 75%;
+	max-width: 240px;
+}
+
+#navigationMenuButton {
+	float: right;
+}
+
+#navigationMenuButton img {
+	width: 20px;
+}
+
+.ui.snapchatHeader.stackable.grid .column {
+	margin-top: 2rem !important;
+	margin-bottom: 1rem;
+	padding-top: 1rem !important;
+	padding-bottom: 1rem;
+}
+
+.snapchatHeader .logo {
+	width: 80px;
+}
+
+.snapchatInvertedHeader h1 {
+	text-align: center;
+}
+
+.snapchatInvertedHeader h1 .logo {
+	padding-top: .5rem;
+	width: 36px;
+}
+
+.ui.snapchatYellow, .ui.button.webButton.snapchatYellow {
+	background-color: #fffc00;
+}
+
+.storyIcon {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	margin-bottom: 30px;
+}
+
+.webContent .headline {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.webContent .description {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.snapchatBody.stackable.grid {
+	padding-bottom: 5rem !important;
+}
+
+.snapchatFooter.stackable.grid {
+	padding-top: 3rem;
+	padding-bottom: 4rem;
+	border-top: 1px solid #EEE;
+}
+
+.snapchatFooter.stackable.grid h5 {
+	text-transform: uppercase;
+}
+
+.snapchatFooter .column {
+	text-align: center;
+}

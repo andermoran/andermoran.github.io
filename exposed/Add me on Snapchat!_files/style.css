@@ -1,0 +1,137 @@
+.snapchatFooter {
+    background-color: white;
+}
+
+.snapchatRow {
+    padding: 1.5px 0;
+}
+
+.webContent {
+    position: absolute !important;
+    width: 100%;
+    top: 46px;
+    bottom: 0px;
+    min-height: 350px;
+}
+
+.webCentered {
+	text-align: center;
+}
+
+.webAbsoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.webHorizontalCenter {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+}
+
+.ui.button.webButton {
+    min-width: 240px;
+    background-color: transparent;
+    border-width: 0.2em;
+    border-style: solid;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@font-face {
+    font-family: 'AvenirNext';
+    src: url('https://www.snapchat.com/fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix');
+    src: url('https://www.snapchat.com/fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix') format('eot'), url('https://www.snapchat.com/fonts/2cd55546-ec00-4af9-aeca-4a3cd186da53.woff2') format('woff2'), url('https://www.snapchat.com/fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff') format('woff'), url('https://www.snapchat.com/fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf') format('truetype'), url('https://www.snapchat.com/fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f') format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'AvenirNext';
+    src: url('https://www.snapchat.com/fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix');
+    src: url('https://www.snapchat.com/fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix') format('eot'), url('https://www.snapchat.com/fonts/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2') format('woff2'), url('https://www.snapchat.com/fonts/f26faddb-86cc-4477-a253-1e1287684336.woff') format('woff'), url('https://www.snapchat.com/fonts/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf') format('truetype'), url('https://www.snapchat.com/fonts/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg#a89d6ad1-a04f-4a8f-b140-e55478dbea80') format('svg');
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'AvenirNext';
+    src: url('https://www.snapchat.com/fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix');
+    src: url('https://www.snapchat.com/fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix') format('eot'), url('https://www.snapchat.com/fonts/aad99a1f-7917-4dd6-bbb5-b07cedbff64f.woff2') format('woff2'), url('https://www.snapchat.com/fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff') format('woff'), url('https://www.snapchat.com/fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf') format('truetype'), url('https://www.snapchat.com/fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d') format('svg');
+    font-weight: 700;
+    font-style: normal
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'AvenirNext', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+/* Responsive */
+
+@media only screen and (min-width: 45em) {
+    .webTitle {
+        font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", "sans-serif";
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 52px;
+        margin-top: 28px;
+    }
+
+    .webBottomLine {
+        font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", "sans-serif";
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        bottom: 10px;
+    }
+
+    .webPubDate {
+        font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", "sans-serif";
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 45em) {
+    div.snapchatFooter.ui.stackable.grid {
+        display: none !important;
+    }
+
+    .webTitle {
+        font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", "sans-serif";
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 35px;
+        margin-top: 8px;
+    }
+
+    .webBottomLine {
+        font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", "sans-serif";
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        bottom: 8px;
+    }
+
+    .webPubDate {
+        font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", "sans-serif";
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 3px;
+    }
+}
