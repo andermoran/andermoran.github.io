@@ -1,7 +1,7 @@
-<manifest alg="2" build="2017.0.1.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="andermoran.github.io" resolutions="1x" timestamp="1518543398632">
+<manifest alg="2" build="2017.0.1.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="andermoran.github.io" resolutions="1x" timestamp="1518546325697">
   <folder name="css">
     <file name="site_global.css" crc="443350757"/>
-    <file name="index.css" crc="3808835564" ref="index"/>
+    <file name="index.css" crc="359044669" ref="index"/>
   </folder>
   <folder name="assets">
     <file name="large-terminal-icon.png" crc="268867553" seo="true" mt="1482707036000"/>
@@ -18,10 +18,6 @@
   <folder name="images">
     <file name="xcode icon large.png" crc="4218729477" seo="true" ref="index"/>
     <file name="large terminal icon.png" crc="4253297024" seo="true" ref="index"/>
-    <file name="blank.gif" crc="4208392903" ref="index"/>
-    <file name="u100.png" crc="4023021987" ref="index"/>
-    <file name="u100-r.png" crc="4023021987" ref="index"/>
-    <file name="u100-m.png" crc="4023021987" ref="index"/>
   </folder>
-  <file name="index.html" crc="3770898268" seo="true" mt="1518543378205" redirect="true"/>
+  <file name="index.html" crc="393822956" seo="true" mt="1518546280698" redirect="true"/>
 </manifest>
