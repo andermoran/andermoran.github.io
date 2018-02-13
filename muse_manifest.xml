@@ -1,4 +1,4 @@
-<manifest alg="2" build="2017.0.1.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="andermoran.github.io" resolutions="1x" timestamp="1518543138038">
+<manifest alg="2" build="2017.0.1.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="andermoran.github.io" resolutions="1x" timestamp="1518543398632">
   <folder name="css">
     <file name="site_global.css" crc="443350757"/>
     <file name="index.css" crc="3808835564" ref="index"/>
@@ -23,5 +23,5 @@
     <file name="u100-r.png" crc="4023021987" ref="index"/>
     <file name="u100-m.png" crc="4023021987" ref="index"/>
   </folder>
-  <file name="index.html" crc="17056497" seo="true" mt="1518543094873" redirect="true"/>
+  <file name="index.html" crc="3770898268" seo="true" mt="1518543378205" redirect="true"/>
 </manifest>
