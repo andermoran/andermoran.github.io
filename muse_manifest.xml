@@ -1,4 +1,4 @@
-<manifest alg="2" build="2017.0.1.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="andermoran.github.io" resolutions="1x" timestamp="1524843095345">
+<manifest alg="2" build="2017.0.1.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="andermoran.github.io" resolutions="1x" timestamp="1524843233348">
   <folder name="css">
     <file name="site_global.css" crc="443350757"/>
     <file name="index.css" crc="475809005" ref="index"/>
