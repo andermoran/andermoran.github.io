@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://andermoran.github.io/index.html</loc>
-    <lastmod>2019-01-06</lastmod>
+    <lastmod>2019-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -25,14 +25,20 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://andermoran.github.io/images/large%20terminal%20icon.png</loc>
-    <lastmod>2019-01-06</lastmod>
+    <loc>http://andermoran.github.io/images/xcode%20icon%20large.png</loc>
+    <lastmod>2019-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://andermoran.github.io/images/xcode%20icon%20large.png</loc>
-    <lastmod>2019-01-06</lastmod>
+    <loc>http://andermoran.github.io/images/large%20terminal%20icon.png</loc>
+    <lastmod>2019-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://andermoran.github.io/assets/ander-resume---12119.pdf</loc>
+    <lastmod>2019-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
