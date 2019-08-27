@@ -1,0 +1,14 @@
+<package>
+	<id>com.andermoran.getuserinstalledapps</id>
+	<name>getuserinstalledapps</name>
+	<version>1.0</version>
+	<dependencies></dependencies>
+	<descriptionlist>
+		<description>For use with Dolosoft</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
