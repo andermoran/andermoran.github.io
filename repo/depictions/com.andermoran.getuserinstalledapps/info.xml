@@ -1,7 +1,7 @@
 <package>
 	<id>com.andermoran.getuserinstalledapps</id>
 	<name>getuserinstalledapps</name>
-	<version>1.2</version>
+	<version>1.2.1</version>
 	<dependencies></dependencies>
 	<descriptionlist>
 		<description>For use with Dolosoft</description>
@@ -11,6 +11,7 @@
 		<change>1.0 Initial release</change>
 		<change>1.1 Now gets app icons</change>
 		<change>1.2 Added post installation instructions to create necessary directory /var/mobile/Documents/Dolosoft/</change>
+		<change>1.2.1 Added -p to mkdir</change>
 	</changelog>
 	<links></links>
 </package>
