@@ -1,7 +1,7 @@
 <package>
 	<id>com.andermoran.getuserinstalledapps</id>
 	<name>getuserinstalledapps</name>
-	<version>1.2.2</version>
+	<version>1.2.3</version>
 	<dependencies></dependencies>
 	<descriptionlist>
 		<description>For use with Dolosoft</description>
@@ -13,6 +13,7 @@
 		<change>1.2 Added post installation instructions to create necessary directory /var/mobile/Documents/Dolosoft/</change>
 		<change>1.2.1 Added -p to mkdir</change>
 		<change>1.2.2 Fixed permissions issue for /var/mobile/Documents/Dolosoft/</change>
+		<change>1.2.3 Fixed display name of app when CFBundleDisplayName == ""/</change>
 	</changelog>
 	<links></links>
 </package>
