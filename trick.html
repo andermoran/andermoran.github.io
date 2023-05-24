@@ -1,23 +1,60 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting...</title>
+  <title>Database Storage with Firebase</title>
+  <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js"></script>
   <script>
-    function redirect() {
-      window.location.href = "https://www.google.com";
+    const firebaseConfig = {
+        apiKey: "AIzaSyBNCcpPJ6ViMKb12rE7RngNOI1xDHnw8_M",
+        authDomain: "trick-80a12.firebaseapp.com",
+        projectId: "trick-80a12",
+        storageBucket: "trick-80a12.appspot.com",
+        messagingSenderId: "264289986026",
+        appId: "1:264289986026:web:805fd578aa00ae658dfe93"
+    };
+
+    // Initialize Firebase with your Firebase configuration
+    firebase.initializeApp(firebaseConfig);
+
+    // Get a reference to the Firestore database
+    var db = firebase.firestore();
+
+    // Save user input to Firestore
+    function saveToFirestore(userInput) {
+      db.collection('user_data').add({
+        text: userInput
+      })
+      .then(function(docRef) {
+        console.log('Data stored successfully. Document ID:', docRef.id);
+      })
+      .catch(function(error) {
+        console.error('Error storing data:', error);
+      });
     }
 
-    setTimeout(redirect, 5000);
+    document.addEventListener('DOMContentLoaded', function() {
+      var saveBtn = document.getElementById('saveBtn');
+      var userInput = document.getElementById('userInput');
 
-    document.addEventListener("visibilitychange", function() {
-      if (document.visibilityState === "visible") {
-        redirect();
-      }
+      saveBtn.addEventListener('click', function() {
+        var inputText = userInput.value;
+
+        // Ensure the input is not empty
+        if (inputText.trim() !== '') {
+          saveToFirestore(inputText);
+          alert('Data stored successfully.');
+          userInput.value = ''; // Clear the input field
+        }
+      });
     });
   </script>
 </head>
 <body>
-  <h1>Redirecting to Google.com...</h1>
+  <h1>Database Storage with Firebase</h1>
+  <input type="text" id="userInput" placeholder="Enter your text">
+  <button id="saveBtn">Save</button>
 </body>
 </html>
