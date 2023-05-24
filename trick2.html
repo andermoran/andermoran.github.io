@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect to Google Query</title>
+  <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js"></script>
+  <script>
+    // Initialize Firebase with your Firebase configuration
+    var firebaseConfig = {
+      // Add your Firebase config here
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    // Get a reference to the Firebase Realtime Database
+    var database = firebase.database();
+
+    // Retrieve the most recent phrase from Firebase Realtime Database
+    function retrieveLatestPhrase() {
+      var phrasesRef = database.ref('phrases');
+
+      phrasesRef.limitToLast(1).on('child_added', function(snapshot) {
+        var phrase = snapshot.val().phrase;
+        redirectToGoogleQuery(phrase);
+      });
+    }
+
+    // Redirect to Google query with the provided phrase
+    function redirectToGoogleQuery(phrase) {
+      var query = encodeURIComponent(phrase);
+      var googleQueryUrl = 'https://www.google.com/search?q=' + query;
+      window.location.href = googleQueryUrl;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      retrieveLatestPhrase();
+    });
+  </script>
+</head>
+<body>
+  <h1>Redirecting to Google Query...</h1>
+</body>
+</html>

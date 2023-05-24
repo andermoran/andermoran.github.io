@@ -1,12 +1,12 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Database Storage with Firebase</title>
+  <title>Enter Words</title>
   <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js"></script>
   <script>
+    // Initialize Firebase with your Firebase configuration
     const firebaseConfig = {
         apiKey: "AIzaSyBNCcpPJ6ViMKb12rE7RngNOI1xDHnw8_M",
         authDomain: "trick-80a12.firebaseapp.com",
@@ -16,19 +16,19 @@
         appId: "1:264289986026:web:805fd578aa00ae658dfe93"
     };
 
-    // Initialize Firebase with your Firebase configuration
     firebase.initializeApp(firebaseConfig);
 
-    // Get a reference to the Firestore database
-    var db = firebase.firestore();
+    // Get a reference to the Firebase Realtime Database
+    var database = firebase.database();
 
-    // Save user input to Firestore
-    function saveToFirestore(userInput) {
-      db.collection('user_data').add({
-        text: userInput
+    // Save user input to Firebase Realtime Database
+    function saveToDatabase(userInput) {
+      var newPhraseRef = database.ref('phrases').push();
+      newPhraseRef.set({
+        phrase: userInput
       })
-      .then(function(docRef) {
-        console.log('Data stored successfully. Document ID:', docRef.id);
+      .then(function() {
+        console.log('Data stored successfully.');
       })
       .catch(function(error) {
         console.error('Error storing data:', error);
@@ -36,15 +36,17 @@
     }
 
     document.addEventListener('DOMContentLoaded', function() {
-      var saveBtn = document.getElementById('saveBtn');
+      var form = document.getElementById('form');
       var userInput = document.getElementById('userInput');
 
-      saveBtn.addEventListener('click', function() {
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
         var inputText = userInput.value;
 
         // Ensure the input is not empty
         if (inputText.trim() !== '') {
-          saveToFirestore(inputText);
+          saveToDatabase(inputText);
           alert('Data stored successfully.');
           userInput.value = ''; // Clear the input field
         }
@@ -53,8 +55,10 @@
   </script>
 </head>
 <body>
-  <h1>Database Storage with Firebase</h1>
-  <input type="text" id="userInput" placeholder="Enter your text">
-  <button id="saveBtn">Save</button>
+  <h1>Enter Words</h1>
+  <form id="form">
+    <input type="text" id="userInput" placeholder="Enter your words">
+    <button type="submit">Submit</button>
+  </form>
 </body>
 </html>
