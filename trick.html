@@ -4,9 +4,17 @@
   <meta charset="UTF-8">
   <title>Redirecting...</title>
   <script>
-    setTimeout(function() {
+    function redirect() {
       window.location.href = "https://www.google.com";
-    }, 5000);
+    }
+
+    setTimeout(redirect, 5000);
+
+    document.addEventListener("visibilitychange", function() {
+      if (document.visibilityState === "visible") {
+        redirect();
+      }
+    });
   </script>
 </head>
 <body>
