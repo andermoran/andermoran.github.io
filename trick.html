@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Enter Words</title>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-  
-  <script>
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js';
+    import { getDatabase, ref, push, set } from 'https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js';
+
     // Initialize Firebase with your Firebase configuration
     const firebaseConfig = {
         apiKey: "AIzaSyBNCcpPJ6ViMKb12rE7RngNOI1xDHnw8_M",
@@ -16,34 +16,31 @@
         messagingSenderId: "264289986026",
         appId: "1:264289986026:web:805fd578aa00ae658dfe93"
     };
-
-    firebase.initializeApp(firebaseConfig);
+    const app = initializeApp(firebaseConfig);
 
     // Get a reference to the Firebase Realtime Database
-    var database = firebase.database();
+    const database = getDatabase();
 
     // Save user input to Firebase Realtime Database
     function saveToDatabase(userInput) {
-      var newPhraseRef = database.ref('phrases').push();
-      newPhraseRef.set({
-        phrase: userInput
-      })
-      .then(function() {
-        console.log('Data stored successfully.');
-      })
-      .catch(function(error) {
-        console.error('Error storing data:', error);
-      });
+      const newPhraseRef = push(ref(database, 'phrases'));
+      set(newPhraseRef, { phrase: userInput })
+        .then(() => {
+          console.log('Data stored successfully.');
+        })
+        .catch((error) => {
+          console.error('Error storing data:', error);
+        });
     }
 
-    document.addEventListener('DOMContentLoaded', function() {
-      var form = document.getElementById('form');
-      var userInput = document.getElementById('userInput');
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('form');
+      const userInput = document.getElementById('userInput');
 
-      form.addEventListener('submit', function(event) {
+      form.addEventListener('submit', (event) => {
         event.preventDefault();
 
-        var inputText = userInput.value;
+        const inputText = userInput.value;
 
         // Ensure the input is not empty
         if (inputText.trim() !== '') {
