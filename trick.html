@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Enter Words</title>
+  <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js"></script>
   <script type="module">
-    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js';
-    import { getDatabase, ref, push, set } from 'https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js';
-
     // Initialize Firebase with your Firebase configuration
     const firebaseConfig = {
         apiKey: "AIzaSyBNCcpPJ6ViMKb12rE7RngNOI1xDHnw8_M",
@@ -16,21 +15,22 @@
         messagingSenderId: "264289986026",
         appId: "1:264289986026:web:805fd578aa00ae658dfe93"
     };
-    const app = initializeApp(firebaseConfig);
+    firebase.initializeApp(firebaseConfig);
 
-    // Get a reference to the Firebase Realtime Database
-    const database = getDatabase();
+    // Get a reference to the Firebase Firestore database
+    const db = firebase.firestore();
 
-    // Save user input to Firebase Realtime Database
-    function saveToDatabase(userInput) {
-      const newPhraseRef = push(ref(database, 'phrases'));
-      set(newPhraseRef, { phrase: userInput })
-        .then(() => {
-          console.log('Data stored successfully.');
-        })
-        .catch((error) => {
-          console.error('Error storing data:', error);
-        });
+    // Save user input to Firebase Firestore
+    function saveToFirestore(userInput) {
+      db.collection('phrases').add({
+        phrase: userInput
+      })
+      .then(() => {
+        console.log('Data stored successfully.');
+      })
+      .catch((error) => {
+        console.error('Error storing data:', error);
+      });
     }
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -44,7 +44,7 @@
 
         // Ensure the input is not empty
         if (inputText.trim() !== '') {
-          saveToDatabase(inputText);
+          saveToFirestore(inputText);
           alert('Data stored successfully.');
           userInput.value = ''; // Clear the input field
         }
