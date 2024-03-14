@@ -16,17 +16,12 @@
             return decodeURIComponent(results[2].replace(/\+/g, " "));
         }
 
-        // Decode base64 string
-        function decodeBase64(base64String) {
-            return atob(base64String);
-        }
-
         // Get the value of the 'uri' parameter from the URL
         var base64String = getParameterByName('base64');
 
         // If the base64 string parameter is provided, construct the URI and redirect
         if (base64String) {
-            var uri = "entraadminassistant://" + decodeBase64(base64String);
+            var uri = "entraadminassistant://" + base64String;
             window.location.href = uri;
         } else {
             // If 'base64' parameter is not provided, redirect to a default URL
@@ -35,6 +30,12 @@
     </script>
 </head>
 <body>
-    <p>If you are not redirected, <a href="https://www.google.com">click here</a>.</p>
+   <p>If you are not redirected, <a id="redirectLink" href="https://www.google.com">click here</a>.</p>
+
+   <script>
+       // Update the link to redirect to the constructed URI if base64String exists
+       var redirectLink = document.getElementById("redirectLink");
+       redirectLink.href = base64String ? "entraadminassistant://" + base64String : redirectLink.href;
+   </script>
 </body>
 </html>
