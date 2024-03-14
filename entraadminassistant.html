@@ -24,18 +24,14 @@
             var uri = "entraadminassistant://" + base64String;
             window.location.href = uri;
         } else {
-            // If 'base64' parameter is not provided, redirect to a default URL
-            window.location.href = "https://www.google.com";
+            // If 'base64' parameter is not provided, redirect to a default URL after a delay
+            setTimeout(function() {
+                window.location.href = "https://www.google.com";
+            }, 3000); // Redirect after 3 seconds
         }
     </script>
 </head>
 <body>
-   <p>If you are not redirected, <a id="redirectLink" href="https://www.google.com">click here</a>.</p>
-
-   <script>
-       // Update the link to redirect to the constructed URI if base64String exists
-       var redirectLink = document.getElementById("redirectLink");
-       redirectLink.href = base64String ? "entraadminassistant://" + base64String : redirectLink.href;
-   </script>
+    <p>If you are not redirected, you may not have the required application installed. Please <a href="https://www.google.com">click here</a> to continue.</p>
 </body>
 </html>
